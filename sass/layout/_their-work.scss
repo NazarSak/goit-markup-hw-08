@@ -1,0 +1,50 @@
+.photo-section-one{
+    padding-bottom:94px;
+  }
+
+  .photo-clients-words{
+
+    @media screen and (min-width: 1200px){
+      
+    }
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--first-text-color);
+    }
+    
+ 
+
+    .general-work-photo{
+        position: relative;
+      }
+
+
+      .exercise-one-div{
+        margin: 0;
+        height: auto;
+        max-width: 100%;
+      }
+
+      .exercise-one-h3{
+        position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:var(--white-text-color);
+        bottom: 0;
+        padding: 27px ;
+        background: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        }
+
+        
+        
+.photo-section .hero-section{
+  color: var(--background-general-color);
+  }

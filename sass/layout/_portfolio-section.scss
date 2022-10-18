@@ -1,0 +1,94 @@
+  
+  .section-three{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+.list{
+
+
+    &-second{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;  
+    }
+
+    &-third{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+    &-item:not(:first-child){
+    margin-left: 8px;
+    }
+
+    &-portfolio{
+    background-color: var(--white-text-color);
+    }
+
+    &-portfolio:hover .hover-portfoli-icnos-p{
+    transform: translateY(0);
+    }
+
+    &-second-page{
+    text-decoration: none;
+    display: block;
+    transition: all 250ms;
+    }
+          
+    &-second-page:focus,
+    &-second-page:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &-hv-portfolio-icon{
+    position: relative;
+    overflow: hidden;
+    }
+            
+    &-portf-p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color:var(--white-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 1000ms  cubic-bezier(0.4, 0, 0.2, 1);
+    }
+                        
+}
+
+                .last-one-the{
+                    border-left: 1px solid var(--main-color);
+                    border-bottom: 1px solid var(--main-color);
+                    border-right: 1px solid var(--main-color);
+                    padding: 20px 24px;
+                  }
+
+                .photo-words{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 2;
+                    letter-spacing: 0.06em;
+                    color:var(--first-text-color);
+                    margin-bottom: 4px;
+                    }
+                    
+                    .list-portfolio:hover .list-portf-p{
+                      transform: translateY(0);
+                    }
+
+                    .under-photo-words{
+                    font-size: 16px;
+                    line-height:1.9;
+                    color:var(--third-text-color);
+                    }
+                    
+                    

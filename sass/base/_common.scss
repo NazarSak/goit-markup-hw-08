@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+margin:0;
+}
+
+ul{
+  padding-left: 0;
+}
+
+.html:active{
+    color: var(--secondary-text-color);
+    }
+    
+    body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height:1.7;
+    letter-spacing: 0.03em;
+    background-color:var(--white-text-color);
+    }
+
+    header{
+        border-bottom: 1px solid #ECECEC;
+      }
+
+
+
+      
+      
+      .list{
+        list-style: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    .footer{
+        background-color:var(--background-text-color);
+        padding: 60px 0;
+      }
+
+      address{
+        font-style: normal;
+        margin-top: 20px;
+        }
+
+        .list-container{
+          // display: flex;
+          // gap: 30px;
+          // flex-direction: row
+        
+          }
+
+          .logo{
+            font-family: 'Raleway', sans-serif;
+           font-weight: 700;
+           font-size: 26px;
+           line-height:1.2;
+           letter-spacing: 0.03em;
+           color:var(--only-black-color);
+           text-decoration: none;
+           margin-right: 90px;
+           display: block;
+           }
+
+          .logo-one{
+            font-family: 'Raleway', sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          line-height:1.2;
+          letter-spacing: 0.03em;
+          color:var(--white-text-color);
+          text-decoration: none;
+          }
+
+          .logo-web{
+            color:var(--secondary-text-color);
+            text-decoration: none;
+            margin-bottom: 20px;
+            }
+
+            .modal{
+              width: 528px;
+              height: 581px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              background:#fff;
+              border-radius: 4px;
+              padding: 40px;
+              }
+          
+
+                .icons{
+                  margin-left: 32px;
+                }
+
+                svg{
+                  transition: all 250ms;
+                  }
+                  
+                  
+.svg-inf{
+  color: #000000;
+  }

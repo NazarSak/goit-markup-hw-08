@@ -1,0 +1,75 @@
+.hero{
+
+
+
+  &-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+
+
+
+        
+  &-social{
+  display: flex;
+  gap: 30px;
+  }
+
+  &-description{
+  width: 270px
+  }
+
+
+  &-description:active{
+  color: var(--secondary-text-color);
+  }
+
+          
+    
+  &-content{
+  color: var(--third-text-color);
+  }
+
+  &-icons{
+  display: flex;    
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bck-icon-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  }
+
+  &-descrption-header{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--first-text-color);
+  margin-bottom: 10px;
+                    }
+               
+          }
+
+                    .h1-my{
+                      display: flex;
+                      justify-content: center;
+                      margin-bottom: 20px;
+                      }
+
+                      .are-hidden {
+                        position: absolute;
+                        width: 1px;
+                        height: 1px;
+                        margin: -1px;
+                        border: 0;
+                        padding: 0;
+                        
+                        white-space: nowrap;
+                        clip-path: inset(100%);
+                        clip: rect(0 0 0 0);
+                        overflow: hidden;
+                        }
+                

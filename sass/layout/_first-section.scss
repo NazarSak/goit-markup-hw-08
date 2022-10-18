@@ -1,0 +1,28 @@
+.first{
+
+
+&-section{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/hero/bck-company.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:var(--background-text-color);
+    padding: 200px 0;
+    text-align: center;
+    max-width: 1600px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-position: center;
+    }
+
+    &-words{
+        @include font(900, 44px, 1.7);
+        margin: 0 auto;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color:var(--white-text-color);
+        text-align: center;
+        max-width: 696px;
+        margin-bottom:35px ;
+      }
+
+    }

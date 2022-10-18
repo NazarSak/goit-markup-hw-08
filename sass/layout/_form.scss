@@ -1,0 +1,195 @@
+.form{
+
+        &-backdrop{
+        width: 100%;
+        height: 100vh;
+        background:rgba(0, 0, 0, 0.5) ;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+
+
+        
+        &-hrestik{
+        fill: var(--only-black-color);
+        }
+
+
+
+
+        &-modal-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+                    
+        color: #212121;
+        }
+
+                    
+        &-element label{
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: var(--third-text-color);
+        }
+
+        &-div-inf{
+        position: relative;
+        }
+
+        &-label{
+        margin-bottom: 4px;
+        margin-left: 0;
+        }
+            
+        &-input-inf{
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        height: 40px;
+        outline: none;
+        width: 100%;
+        padding-left: 40px;
+        }
+
+        &-element{
+        display:flex;
+        flex-direction: column;
+        margin-top: 12px;
+        }
+                 
+        &-modal-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        }
+
+        &-textarea{
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        padding: 12px 16px;
+        height: 120px;
+        }
+                        
+        &-element .textarea:focus{
+        border: 1px solid var(--secondary-text-color);
+        }
+                        
+        &-contract-element{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+                            
+        &-label-contract{
+        color: var(--third-text-color);
+        display: flex;
+        align-items: center;
+         }
+
+                                    
+        &-element:focus + svg{
+        fill: var(--secondary-text-color);
+        }
+
+    
+        
+     
+        &-span-inf{
+        color: var(--secondary-text-color);
+        }
+           
+        &-btn{
+        text-align: center;
+        }
+                
+                
+        &-element input:focus,
+        &-element input:active{
+        border: 1px solid var(--secondary-text-color);
+        }
+    
+
+        &-element input:focus + svg{
+        fill: var(--secondary-text-color);
+        }
+
+    
+        &-element svg{
+        position: absolute;
+        top: 14px;
+        left:14px ;
+        }
+
+}
+
+    .input-hiddden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        }
+        
+
+        .is-hidden{
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            }
+
+            .input-hiddden:checked + .svg-contract{
+                background-color: var(--secondary-text-color);
+                fill: var(--white-text-color);
+                border: var(--secondary-text-color);
+                }
+                
+                .svg-contract{
+                    margin-right: 8px; 
+                    
+                    width: 16px;
+                    height: 15px;
+                    
+                    border: 2px solid var(--first-text-color);
+                    border-radius: 2px;
+                    
+                    fill: transparent;
+                    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+
+                    
+            .modal-form .btn-inf{
+                display: flex;
+                margin-top: 20px;
+                font-weight: 500;
+                font-family: inherit;
+                font-size: 16px;
+                line-height:1.6;
+                border-radius: 4px;
+                padding: 6px 22px;
+                letter-spacing: 0.03em;
+                color:var(--white-text-color);
+                background-color:var(--secondary-text-color);
+                border:none;
+                cursor: pointer;
+                text-align: center;
+                
+                justify-content: center;
+                transition:color 250ms
+                cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
