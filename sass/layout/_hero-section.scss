@@ -3,20 +3,39 @@
 
 
   &-section{
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
 
 
         
   &-social{
-  display: flex;
-  gap: 30px;
+
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+      gap: 30px;
+    }
+
   }
 
   &-description{
-  width: 270px
+width: 450px;
+text-align: center;
+
+
+    @media screen and (min-width: 1200px){
+      width: 270px
+    }
+ 
   }
 
 
@@ -31,14 +50,27 @@
   }
 
   &-icons{
-  display: flex;    
-  width: 270px;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bck-icon-color);
-  margin-bottom: 30px;
-  border-radius: 4px;
+
+    display: flex;    
+    width: 450px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bck-icon-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (min-width: 1200px){
+      display: flex;    
+      width: 270px;
+      height: 120px;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bck-icon-color);
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+
   }
 
   &-descrption-header{
@@ -73,3 +105,17 @@
                         overflow: hidden;
                         }
                 
+                        .hero-photo{
+                         width: 450px;
+                         height: 460px;
+
+                         @media screen and (min-width: 768px){
+                          width: 354px;
+                          height: 374px;
+                         }
+
+                         @media screen and (min-width: 1200px){
+                          width: 270px;
+                          height: 260px;
+                         }
+                        }
