@@ -139,7 +139,7 @@ svg {
 }
 
 .container {
-  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -350,10 +350,9 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-text-color);
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
-  max-width: 1600px;
-  min-height: 600px;
+  height: 400px;
   margin: 0 auto;
   background-position: center;
 }
@@ -416,10 +415,6 @@ button {
     gap: 30px;
   }
 }
-.hero-description {
-  width: 450px;
-  text-align: center;
-}
 @media screen and (min-width: 1200px) {
   .hero-description {
     width: 270px;
@@ -433,7 +428,7 @@ button {
 }
 .hero-icons {
   display: flex;
-  width: 450px;
+  width: 100%;
   height: 120px;
   align-items: center;
   justify-content: center;
@@ -453,6 +448,15 @@ button {
     border-radius: 4px;
   }
 }
+.hero-descriptiom {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .hero-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 .hero-descrption-header {
   font-weight: 700;
   font-size: 14px;
@@ -461,6 +465,18 @@ button {
   text-transform: uppercase;
   color: var(--first-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero-descrption-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-text-color);
+    margin-bottom: 10px;
+  }
 }
 
 .h1-my {
@@ -570,7 +586,7 @@ button {
     border-radius: 0px 8px 4px 4px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 762px) {
   .photo-hero-comand:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -734,7 +750,7 @@ button {
 }
 
 .footer-div {
-  margin: 60px 0;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-div {
@@ -755,9 +771,9 @@ button {
   display: flex;
   gap: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 762px) {
   .footer-second {
-    margin-left: 122px;
+    margin-left: 100px;
   }
 }
 .footer-second__li {
@@ -789,6 +805,7 @@ button {
 
 .con-teleg {
   margin-left: auto;
+  margin-top: 60px;
 }
 .con-teleg--invite {
   font-weight: 400;
@@ -811,8 +828,9 @@ button {
   height: 50px;
   padding-left: 16px;
   color: var(--white-text-color);
-  width: 450px;
+  width: 100%;
   margin-right: 12px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .con-teleg input {
@@ -991,7 +1009,14 @@ button {
 .list-second {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .list-second {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 .list-third {
   display: flex;
@@ -1001,11 +1026,30 @@ button {
 .list-item:not(:first-child) {
   margin-left: 8px;
 }
-.list-portfolio {
-  background-color: var(--white-text-color);
+@media screen and (min-width: 480px) {
+  .list-portfolio {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-portfolio {
+    background-color: var(--white-text-color);
+    width: 370px;
+  }
 }
 .list-portfolio:hover .hover-portfoli-icnos-p {
   transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .list__img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list__img {
+    width: 370px;
+    height: 294px;
+  }
 }
 .list-second-page {
   text-decoration: none;
@@ -1048,7 +1092,16 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--first-text-color);
-  margin-bottom: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .photo-words {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--first-text-color);
+    margin-bottom: 4px;
+  }
 }
 
 .list-portfolio:hover .list-portf-p {
@@ -1056,7 +1109,21 @@ button {
 }
 
 .under-photo-words {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
   color: var(--third-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .under-photo-words {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--third-text-color);
+  }
+}
+
+.third {
+  width: 326px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

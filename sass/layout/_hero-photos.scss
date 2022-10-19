@@ -29,7 +29,7 @@
 
            
            &-hero-comand:not(:last-child) {
-            @media screen and (min-width: 480px){
+            @media screen and (max-width: 762px){
             margin-bottom: 30px;}
           }
 

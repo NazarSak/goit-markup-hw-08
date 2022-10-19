@@ -8,9 +8,16 @@
 
 
     &-second{
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;  
+
+      display: flex;
+      margin-bottom: 50px;
+    flex-wrap: wrap;
+
+      @media screen and (min-width: 1200px){
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center; 
+      }
     }
 
     &-third{
@@ -24,12 +31,35 @@
     }
 
     &-portfolio{
-    background-color: var(--white-text-color);
+
+      @media screen and (min-width: 480px){
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1200px){
+        background-color: var(--white-text-color);
+        width: 370px;
+      }
+   
     }
 
     &-portfolio:hover .hover-portfoli-icnos-p{
     transform: translateY(0);
     }
+
+   &__img{
+    @media screen and (min-width: 480px){
+      width: 100%;
+    }
+
+
+
+    @media screen and (min-width: 1200px){
+      width: 370px;
+      height: 294px;
+    }
+   }
+
 
     &-second-page{
     text-decoration: none;
@@ -73,12 +103,21 @@
                   }
 
                 .photo-words{
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height:2;
+                  letter-spacing: 0.06em;
+                  color: var(--first-text-color);
+
+                  @media screen and (min-width: 1200px){
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 2;
                     letter-spacing: 0.06em;
                     color:var(--first-text-color);
                     margin-bottom: 4px;
+                  }
+                 
                     }
                     
                     .list-portfolio:hover .list-portf-p{
@@ -86,9 +125,21 @@
                     }
 
                     .under-photo-words{
-                    font-size: 16px;
-                    line-height:1.9;
-                    color:var(--third-text-color);
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height:1.9;
+                      letter-spacing: 0.03em;
+                      color:var(--third-text-color);
+                    
+                    
+                      @media screen and (min-width: 1200px){
+                        font-size: 16px;
+                        line-height:1.9;
+                        color:var(--third-text-color);
+                      }
                     }
                     
-                    
+                    .third{
+                      width: 326px;
+                      margin: 0 auto;
+                    }
