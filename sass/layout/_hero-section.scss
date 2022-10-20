@@ -16,7 +16,7 @@
         
   &-social{
 
-    display: flex;
+  
     gap: 30px;
     flex-wrap: wrap;
 
@@ -29,7 +29,7 @@
 
   &-description{
 
-
+margin-bottom: 20px;
 
     @media screen and (min-width: 1200px){
       width: 270px

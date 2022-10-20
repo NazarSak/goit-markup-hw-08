@@ -400,7 +400,6 @@ button {
   }
 }
 .hero-social {
-  display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -409,6 +408,9 @@ button {
     display: flex;
     gap: 30px;
   }
+}
+.hero-description {
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .hero-description {
@@ -511,8 +513,15 @@ button {
   }
 }
 
-.photo-section-one {
-  padding-bottom: 94px;
+@media screen and (max-width: 1200px) {
+  .photo-section-one {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo-section-one {
+    padding-bottom: 94px;
+  }
 }
 
 .photo-clients-words {

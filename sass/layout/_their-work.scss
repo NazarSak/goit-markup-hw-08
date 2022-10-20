@@ -1,5 +1,13 @@
 .photo-section-one{
+
+  @media screen and (max-width: 1200px){
+display: none;
+  }
+
+  @media screen and (min-width: 1200px){
     padding-bottom:94px;
+  }
+    
   }
 
   .photo-clients-words{
