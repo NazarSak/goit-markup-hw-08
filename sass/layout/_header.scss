@@ -42,13 +42,7 @@
 
     .header-contacts-wrap{
     margin-left:auto;
-
-    @media screen and (max-width: 762px)
-  {
-    display: none;
-  }  
-  }
-
+    }
     
 .header-message{
 
@@ -135,10 +129,4 @@
           border-radius: 2px;
           }
 
-        }
-
-        nav{
-          @media screen and (max-width: 762px){
-            display: none;
-          }
         }

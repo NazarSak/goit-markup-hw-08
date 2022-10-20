@@ -271,11 +271,6 @@ button {
 .header-contacts-wrap {
   margin-left: auto;
 }
-@media screen and (max-width: 762px) {
-  .header-contacts-wrap {
-    display: none;
-  }
-}
 
 .header-message {
   display: flex;
@@ -343,12 +338,6 @@ button {
   height: 4px;
   background-color: var(--secondary-text-color);
   border-radius: 2px;
-}
-
-@media screen and (max-width: 762px) {
-  nav {
-    display: none;
-  }
 }
 
 .first-section {
