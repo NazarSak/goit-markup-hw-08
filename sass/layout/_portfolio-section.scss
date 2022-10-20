@@ -8,12 +8,17 @@
 
 
     &-second{
+      @media screen and (max-width: 762px){
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 10px;
+        width: 326px;
+      }
+     
 
-      display: flex;
-      margin-bottom: 50px;
-    flex-wrap: wrap;
-
-      @media screen and (min-width: 1200px){
+      @media screen and (min-width: 762px){
         display: flex;
         margin-bottom: 50px;
         justify-content: center; 
@@ -27,7 +32,10 @@
     }
 
     &-item:not(:first-child){
-    margin-left: 8px;
+      @media screen and (min-width: 768px){
+        margin-left: 8px;
+      }
+  
     }
 
     &-portfolio{
@@ -138,8 +146,4 @@
                         color:var(--third-text-color);
                       }
                     }
-                    
-                    .third{
-                      width: 326px;
-                      margin: 0 auto;
-                    }
+                  

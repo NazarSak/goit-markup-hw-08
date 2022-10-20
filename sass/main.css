@@ -1001,12 +1001,18 @@ button {
   padding-bottom: 94px;
 }
 
-.list-second {
-  display: flex;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
+@media screen and (max-width: 762px) {
+  .list-second {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 10px;
+    width: 326px;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 762px) {
   .list-second {
     display: flex;
     margin-bottom: 50px;
@@ -1018,8 +1024,10 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
-.list-item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .list-item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 @media screen and (min-width: 480px) {
   .list-portfolio {
@@ -1116,9 +1124,4 @@ button {
     line-height: 1.9;
     color: var(--third-text-color);
   }
-}
-
-.third {
-  width: 326px;
-  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
