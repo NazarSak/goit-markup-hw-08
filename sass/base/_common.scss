@@ -56,6 +56,13 @@ ul{
 
         .list-container{
      
+          @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+          }
+
       @media screen and (min-width: 1200px)
         {
           display: flex;
@@ -85,6 +92,19 @@ ul{
             letter-spacing: 0.03em;
             color:var(--white-text-color);
             text-decoration: none;
+
+            @media screen and (min-width: 768px){
+              
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height:1.2;
+            letter-spacing: 0.03em;
+            color:var(--white-text-color);
+            text-decoration: none;
+            display: flex;
+            
+            }
             
             @media screen and (min-width: 1200px){
               font-family: 'Raleway', sans-serif;
