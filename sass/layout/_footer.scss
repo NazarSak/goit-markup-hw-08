@@ -46,8 +46,11 @@ text-align: center;
 
         &__list{
             @media screen and (min-width: 768px){
-                margin-left: -50px;
-                width: 232px;
+ display: flex;
+ flex-wrap: wrap;
+ width: 232px;
+ justify-content: space-around;
+ margin-left: 76px;
             }
         }
     }
@@ -115,7 +118,14 @@ text-align: center;
  .con-teleg{
     margin-left: auto;
     margin-top: 60px;
+
+              @media screen and (min-width: 1200px){
+                margin-left: 93px;
+                margin-top: 60px;
              
+                
+              }
+
         &--invite{
         @include font(400,14px,1.7);
         text-transform: uppercase;

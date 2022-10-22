@@ -107,12 +107,13 @@
                         
 }
 
-                .last-one-the{
+                .last-one-the:not(:first-child){
                     border-left: 1px solid var(--main-color);
                     border-bottom: 1px solid var(--main-color);
                     border-right: 1px solid var(--main-color);
                     padding: 20px 24px;
                   }
+             
 
                 .photo-words{
                   font-weight: 700;

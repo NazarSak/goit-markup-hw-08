@@ -122,7 +122,18 @@
 <ul class="list list-container">
       <li class="general-work-photo">
        <div class="exercise-one">
-        <img src="./img/img-one.jpg" alt="Робота з пк" class="exercise-one-div" width="370"> 
+
+<picture>
+    <source
+    srcset="
+    ./img/gallery/work-img-1-desk-1x.jpg 1x,
+    ./img/gallery/work-img-1-desk-2x.jpg 2x
+    "
+    />
+    <img src="./img/gallery/work-img-1-desk-1x.jpg 1x" alt="Робота з пк" class="exercise-one-div" width="370"> 
+</picture>
+
+      
         <h3 class="exercise-one-h3">Десктопні додатки</h3>
     </div>    
     </li>
@@ -130,14 +141,37 @@
         <li class="general-work-photo">
             
             <div class="exercise-one">
-                <img src="./img/img-two.jpg" alt="робота приладів" width="370">
+
+                <picture>
+                    <source
+                    srcset="
+                    ./img/gallery/work-img-2-desk-1x.jpg 1x,
+                    ./img/gallery/work-img-2-desk-2x.jpg 2x
+                    "
+                    />
+                    <img src="./img/gallery/work-img-2-desk-1x.jpg" alt="робота приладів" class="exercise-one-div" width="370"> 
+                </picture>
+
+             
                 <h3 class="exercise-one-h3">Мобільні додатки</h3>
             </div>   
         </li>
         
         <li class="general-work-photo">
         <div class="exercise-one">
-            <img src="./img/img-thre.jpg" alt="робота дизайнера" width="370">         
+
+
+            <picture>
+                <source
+                srcset="
+                ./img/gallery/work-img-3-desk-1x.jpg 1x,
+                ./img/gallery/work-img-3-desk-2x.jpg 2x
+                "
+                />
+                <img src="./img/gallery/work-img-3-desk-1x.jpg" alt="робота дизайнера" class="exercise-one-div" width="370"> 
+            </picture>
+
+           
             <h3 class="exercise-one-h3">Дизайнерські рішення</h3>
         </div>  
        
@@ -154,10 +188,42 @@
         <h2 class="header-hero">Наша команда</h2>
         
         <ul class="list list-container ">
-            <li class="photo-hero-comand"> <img src="./img/comand.jpg" 
-                alt="Ігор Дем'яненко"
-                class="hero-photo"
-                > 
+            <li class="photo-hero-comand"> 
+                
+                <picture>
+                    <source
+
+                    srcset="
+                    ./img/gallery/gallery-img-1-desk-1x.jpg 1x,
+                    ./img/gallery/gallery-img-1-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-1-tab-1x.jpg 1x,
+                    ./img/gallery/gallery-img-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-1-mob-1x.jpg 1x,
+                    ./img/gallery/gallery-img-1-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    />
+
+                    <img 
+                    src="./img/gallery/gallery-img-1-desk-1x.jpg" 
+                    alt="Ігор Дем'яненко"
+                    class="hero-photo"
+                    > 
+                </picture>
+                
+               
                 <h3 class="photo-name">Ігор Дем'яненко</h3> 
                 <p class="photo-description">Product Designer</p> 
               
@@ -204,10 +270,44 @@
                 </ul>
 
             </li>
-            <li class="photo-hero-comand "> <img src="./img/comand-one.jpg" 
-                alt="Ольга Рєпіна"
-                class="hero-photo"
-                > 
+            <li class="photo-hero-comand "> 
+                
+                
+                <picture>
+                    <source
+
+                    srcset="
+                    ./img/gallery/gallery-img-2-desk-1x.jpg 1x,
+                    ./img/gallery/gallery-img-2-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-2-tab-1x.jpg 1x,
+                    ./img/gallery/gallery-img-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-2-mob-1x.jpg 1x,
+                    ./img/gallery/gallery-img-2-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    />
+
+                    <img 
+                    src="./img/gallery/gallery-img-2-desk-1x.jpg" 
+                    alt="Ольга Рєпіна"
+                    class="hero-photo"
+                    > 
+                </picture>
+                
+            
+
                 <h3 class="photo-name">Ольга Рєпіна</h3> 
                 <p class="photo-description">Frontend Developer</p> 
                 <ul class="list photo-description-icons">
@@ -254,10 +354,45 @@
                     </ul>
             </li>
         
-            <li class="photo-hero-comand  "> <img src="./img/comand-two.jpg" 
-                alt="Микола Тарасов"
-                 class="hero-photo"
-                > 
+            <li class="photo-hero-comand  "> 
+                
+
+                <picture>
+                    <source
+
+                    srcset="
+                    ./img/gallery/gallery-img-3-desk-1x.jpg 1x,
+                    ./img/gallery/gallery-img-3-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-3-tab-1x.jpg 1x,
+                    ./img/gallery/gallery-img-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-3-mob-1x.jpg 1x,
+                    ./img/gallery/gallery-img-3-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    />
+
+                    <img 
+                    src="./img/gallery/gallery-img-3-desk-1x.jpg" 
+                    alt="Микола Тарасов"
+                    class="hero-photo"
+                    > 
+                </picture>
+
+              
+                
+                
                 <h3 class="photo-name">Микола Тарасов</h3> 
                 <p class="photo-description">Marketing</p> 
 
@@ -306,10 +441,42 @@
                     </ul>
             </li>
         
-            <li class="photo-hero-comand "> <img src="./img/comand-three.jpg" 
-                alt="Михайло Єрмаков"
-                class="hero-photo"
-                > 
+            <li class="photo-hero-comand "> 
+                
+                <picture>
+                    <source
+
+                    srcset="
+                    ./img/gallery/gallery-img-4-desk-1x.jpg 1x,
+                    ./img/gallery/gallery-img-4-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-4-tab-1x.jpg 1x,
+                    ./img/gallery/gallery-img-4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+
+                    <source
+                    srcset="
+                    ./img/gallery/gallery-img-4-mob-1x.jpg 1x,
+                    ./img/gallery/gallery-img-4-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                    />
+
+                    <img 
+                    src="./img/gallery/gallery-img-4-desk-1x.jpg" 
+                    alt="Михайло Єрмаков"
+                    class="hero-photo"
+                    > 
+                </picture>
+
+
                 <h3 class="photo-name">Михайло Єрмаков</h3> 
                 <p class="photo-description">UI Designer</p> 
 
@@ -593,7 +760,7 @@
     <use xlink:href="./img/sprite-galochka.svg#icon-Vector"></use>
     </svg>    
     
-    Погоджуюся з розсилкою та приймаю <a href="" class="form-span-inf"> Умови договору</a></span></label>
+   <p class="subway"> Погоджуюся з розсилкою та приймаю</p> <a href="" class="form-span-inf"> Умови договору</a></span></label>
 
 
 </div>
