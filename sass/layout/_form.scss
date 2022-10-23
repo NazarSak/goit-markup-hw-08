@@ -91,6 +91,17 @@
         }
                             
         &-label-contract{
+            @media screen and (max-width: 480px){
+                color: var(--third-text-color);
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.2;
+                letter-spacing: 0.03em;
+            }
+
+
         color: var(--third-text-color);
         display: flex;
         align-items: center;

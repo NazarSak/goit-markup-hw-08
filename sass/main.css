@@ -155,6 +155,7 @@ address {
 @media screen and (max-width: 480px) {
   .modal {
     width: 100%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -164,6 +165,19 @@ address {
     padding: 40px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 4px;
+    padding: 40px;
   }
 }
 
@@ -177,6 +191,16 @@ svg {
 
 .svg-inf {
   color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+.menu-tel {
+  background-color: #ECECEC;
 }
 
 .container {
@@ -320,6 +344,12 @@ button {
 .header-contacts-wrap {
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .header-contacts-wrap {
+    margin-left: auto;
+    display: none;
+  }
+}
 
 .header-message {
   display: flex;
@@ -340,6 +370,36 @@ button {
   text-align: center;
   display: flex;
   transition: color 250ms, background-color 250ms;
+}
+@media screen and (min-width: 768px) {
+  .header-message__svg {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    transition: color 250ms, background-color 250ms;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-message__svg {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    transition: color 250ms, background-color 250ms;
+  }
 }
 .header-message__svg:hover, .header-message__svg:focus {
   color: var(--secondary-text-color);
@@ -1094,6 +1154,17 @@ button {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .form-label-contract {
+    color: var(--third-text-color);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}
 .form-element:focus + svg {
   fill: var(--secondary-text-color);
 }
@@ -1210,6 +1281,14 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 480px) {
+  .list-third {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-item:not(:first-child) {
     margin-left: 8px;
@@ -1217,7 +1296,7 @@ button {
 }
 @media screen and (min-width: 480px) {
   .list-portfolio {
-    width: 100%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1249,6 +1328,9 @@ button {
   text-decoration: none;
   display: block;
   transition: all 250ms;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .list-second-page:focus, .list-second-page:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1278,6 +1360,10 @@ button {
   border-bottom: 1px solid var(--main-color);
   border-right: 1px solid var(--main-color);
   padding: 20px 24px;
+}
+
+.last-one-the {
+  flex-grow: 1;
 }
 
 .photo-words {

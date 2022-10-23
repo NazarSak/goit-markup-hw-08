@@ -41,6 +41,11 @@
   }
 
     .header-contacts-wrap{
+
+      @media screen and (max-width: 768px) {
+        margin-left:auto;
+        display: none;
+      }
     margin-left:auto;
     }
     
@@ -55,17 +60,48 @@
     }
 
     &__svg{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color:var(--third-text-color);
-    text-decoration:none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    transition: color 250ms, background-color 250ms
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      color:var(--third-text-color);
+      text-decoration:none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      transition: color 250ms, background-color 250ms;
+      
+
+      @media screen and (min-width: 768px){
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color:var(--third-text-color);
+        text-decoration:none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        transition: color 250ms, background-color 250ms     
+      }
+
+      @media screen and (min-width: 1200px){
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color:var(--third-text-color);
+        text-decoration:none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        transition: color 250ms, background-color 250ms
+      }
+
     }
         
     &__svg:hover,

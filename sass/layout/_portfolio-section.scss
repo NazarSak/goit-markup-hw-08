@@ -26,6 +26,15 @@
     }
 
     &-third{
+
+      @media screen and (min-width: 480px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;      
+      }
+
+
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -41,7 +50,7 @@
     &-portfolio{
 
       @media screen and (min-width: 480px){
-        width: 100%;
+        width: 450px;
       }
 
       @media screen and (min-width: 768px){
@@ -77,6 +86,9 @@
     text-decoration: none;
     display: block;
     transition: all 250ms;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     }
           
     &-second-page:focus,
@@ -114,6 +126,10 @@
                     padding: 20px 24px;
                   }
              
+                  .last-one-the{
+                   flex-grow: 1;
+                  }
+
 
                 .photo-words{
                   font-weight: 700;
