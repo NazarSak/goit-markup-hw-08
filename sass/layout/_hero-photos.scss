@@ -3,6 +3,7 @@
             &-hero{
             background:var(--background-ligt-color);
             padding: 60px 0;
+            width: 100%;
             
 
             @media screen and (min-width: 1200px){
@@ -41,7 +42,7 @@
 
            
            &-hero-comand:not(:last-child) {
-            @media screen and (max-width: 762px){
+            @media screen and (max-width: 768px){
             margin-bottom: 30px;}
           }
 

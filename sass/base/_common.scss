@@ -97,20 +97,6 @@ justify-content: center;
             color:var(--white-text-color);
             text-decoration: none;
 
-            @media screen and (min-width: 768px){
-              
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            line-height:1.2;
-            letter-spacing: 0.03em;
-            color:var(--white-text-color);
-            text-decoration: none;
-            display: flex;
-            margin-left: 115px;
-            
-            }
-            
             @media screen and (min-width: 1200px){
               font-family: 'Raleway', sans-serif;
               font-weight: 700;
@@ -191,4 +177,20 @@ justify-content: center;
   
   .menu-tel{
     background-color: #ECECEC;
+  }
+  .div-tab-li{
+    margin-top: 10px;
+  }
+
+  .footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .menu-tel{
+    @media screen and (min-width: 768px) {
+      display:none  ;
+    }
   }

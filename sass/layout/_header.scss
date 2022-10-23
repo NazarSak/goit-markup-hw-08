@@ -50,9 +50,11 @@
     }
     
 .header-message{
-
+  @media screen and (min-width: 1200px){
     display: flex;
-    align-items:center ;
+    align-items:baseline ;
+  }
+
     
 
     &__li:not(:first-child){
