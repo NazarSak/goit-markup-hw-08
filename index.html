@@ -56,77 +56,91 @@
 
 
 
-<button class="menu-open" type="button">
-    <svg width="40" height="40">
-        <use href="./images/icons.svg#icon-menu-open"></use>
-    </svg>
-</button>
+
 </div>
-<div class="mob-menu is-hidden">
-<div class="mob-container">
-<div class="mob-menu-top">
-<button class="mob-menu-close">
-    <svg width="30" height="30">
-        <use href="./images/icons.svg#icon-close"></use>
+
+
+<button type="button"  class="menu-toggle js-open-menu menu-buton"
+aria-expanded="false"
+aria-controls="mobile-menu">
+
+    <svg width="24" height="16">
+        <use href="./img/sprite-menu.svg#icon-menu"></use>
     </svg>
 </button>
-<nav>
-    <ul class="mob-menu-list list">
-        <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link current">Студия</a></li>
-        <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио<div
-                    class="header__overlay"></div></a></li>
-        <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты<div class="header__overlay">
-                </div></a>
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mob-container">
+    <div class="mob-menu-top">
+    <button class="menu-toggle js-close-menu">
+        <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+    <nav>
+        <ul class="mob-menu list">
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link current">Студия</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио<div
+                        class="header__overlay"></div></a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты<div class="header__overlay">
+                    </div></a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div class="mob-menu-bottom">
+    <ul class="mob-menu-contacts-list list">
+        <li class="mob-menu-contact-item mail">
+            <a href="tel:+380961111111" class="mob-menu-contact-tel link">
+                +38 096
+                111 11 11</a>
+        </li>
+        <li class="mob-menu-contact-item">
+            <a href="mailto:info@devstudio.com" class="mob-menu-contact-mail link mail-to">
+                info@devstudio.com</a>
         </li>
     </ul>
-</nav>
-</div>
-<div class="mob-menu-bottom">
-<ul class="mob-menu-contacts-list list">
-    <li class="mob-menu-contact-item mail">
-        <a href="tel:+380961111111" class="mob-menu-contact-tel link">
-            +38 096
-            111 11 11</a>
-    </li>
-    <li class="mob-menu-contact-item">
-        <a href="mailto:info@devstudio.com" class="mob-menu-contact-mail link mail-to">
-            info@devstudio.com</a>
-    </li>
-</ul>
-<ul class="social-menu list">
-    <li class="social-menu-item">
-        <a href="" class="social-menu-link link">Instagramm</a>
-    </li>
-    <li class="social-menu-item span">
-        <span class="mob-menu-line"></span>
-    </li>
-    <li class="social-menu-item">
-        <a href="" class="social-menu-link link">Twitter</a>
-    </li>
-    <li class="social-menu-item">
-        <span class="mob-menu-line"></span>
-    </li>
-    <li class="social-menu-item">
-        <a href="" class="social-menu-link link">Facebook</a>
-    </li>
-    <li class="social-menu-item">
-        <span class="mob-menu-line"></span>
-    </li>
-    <li class="social-menu-item">
-        <a href="" class="social-menu-link link">Linkedin</a>
-    </li>
-</ul>
-</div>
-</div>
-
-
-
+    <ul class="social-menu list">
+        <li class="social-menu-item">
+            <a href="" class="social-menu-link link">Instagramm</a>
+        </li>
+        <li class="social-menu-item span">
+            <span class="mob-menu-line"></span>
+        </li>
+        <li class="social-menu-item">
+            <a href="" class="social-menu-link link">Twitter</a>
+        </li>
+        <li class="social-menu-item">
+            <span class="mob-menu-line"></span>
+        </li>
+        <li class="social-menu-item">
+            <a href="" class="social-menu-link link">Facebook</a>
+        </li>
+        <li class="social-menu-item">
+            <span class="mob-menu-line"></span>
+        </li>
+        <li class="social-menu-item">
+            <a href="" class="social-menu-link link">Linkedin</a>
+        </li>
+    </ul>
+    </div>
+    </div>
+    
 
 
 </div>
 </header>
 <!-- Основний контент -->
 <main>
+
+
+
+ 
+
+
+
+
 <!-- Перша коробка з кнопкою -->
 <section class="first-section">
 <div class="container">
@@ -855,7 +869,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLoc
 integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
 crossorigin="anonymous"
 ></script>
-<script defer src="js/mobile-menu.js"></script>
+<script defer src="js/mobile-menu.js">
+    
+</script>
 
 </body>
 </html>
