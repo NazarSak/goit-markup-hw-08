@@ -213,7 +213,22 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -233,6 +248,9 @@ svg {
   z-index: 2;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .menu-container.is-open {
@@ -303,6 +321,7 @@ svg {
 .social-menu-ul {
   display: flex;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 
 .social-menu-link {
