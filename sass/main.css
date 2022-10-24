@@ -143,17 +143,6 @@ address {
   margin-bottom: 20px;
 }
 
-.modal {
-  width: 528px;
-  height: 581px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  border-radius: 4px;
-  padding: 40px;
-}
 @media screen and (max-width: 480px) {
   .modal {
     width: 100%;
@@ -165,14 +154,26 @@ address {
     background: #fff;
     border-radius: 4px;
     padding: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 4px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -466,8 +467,10 @@ button {
     flex-direction: column;
   }
 }
-.header-list__item:not(:first-child) {
-  margin-top: 32px;
+@media screen and (max-width: 768px) {
+  .header-list__item:not(:first-child) {
+    margin-top: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-list__item:not(:first-child) {
@@ -841,12 +844,6 @@ button {
   }
 }
 
-.h1-my {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 .are-hidden {
   position: absolute;
   width: 1px;
@@ -863,7 +860,6 @@ button {
 
 .hero-photo {
   width: 100%;
-  height: 460px;
 }
 @media screen and (min-width: 768px) {
   .hero-photo {
@@ -1196,6 +1192,7 @@ button {
 .con-teleg {
   margin-left: auto;
   margin-top: 60px;
+  text-align: -webkit-center;
 }
 @media screen and (min-width: 768px) {
   .con-teleg {
@@ -1209,7 +1206,7 @@ button {
 @media screen and (min-width: 1200px) {
   .con-teleg {
     margin-left: 93px;
-    margin-top: 60px;
+    margin-top: 1px;
   }
 }
 .con-teleg--invite {

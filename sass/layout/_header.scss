@@ -20,8 +20,9 @@ align-items: baseline;
     
 
     &__item:not(:first-child){
-
-margin-top: 32px;
+      @media screen and (max-width: 768px){
+        margin-top: 32px;
+      }
 
       @media screen and (min-width: 768px){
         margin-left:50px;
