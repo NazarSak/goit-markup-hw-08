@@ -59,8 +59,8 @@
 
 </div>
 
-
-<button type="button"  class="menu-toggle js-open-menu menu-buton"
+<div class="menu-three">
+<button type="button"  class="menu-toggle js-open-menu menu-button"
 aria-expanded="false"
 aria-controls="mobile-menu">
 
@@ -68,40 +68,43 @@ aria-controls="mobile-menu">
         <use href="./img/sprite-menu.svg#icon-menu"></use>
     </svg>
 </button>
-
+</div>
 
 <div class="menu-container js-menu-container" id="mobile-menu">
     <div class="mob-container">
     <div class="mob-menu-top">
-    <button class="menu-toggle js-close-menu">
-        <svg width="30" height="30">
-            <use href="./images/icons.svg#icon-close"></use>
+    <button class="menu-toggle js-close-menu menu-svg" >
+        <svg width="19" height="19" class="menu-close">
+            <use href="./img/sprite-hrest.svg#icon-hrest"></use>
         </svg>
     </button>
-    <nav>
-        <ul class="mob-menu list">
-            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link current">Студия</a></li>
-            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио<div
-                        class="header__overlay"></div></a></li>
-            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты<div class="header__overlay">
-                    </div></a>
-            </li>
-        </ul>
-    </nav>
+
+    
+        <ul class="header-list list current">
+            <li class="header-list__item"> <a href="./index.html" class="header-list__link  current__one ">Студія</a></li>     
+            <li class="header-list__item">  <a href="./portfolio.html" class="header-list__link  ">Портфоліо</a></li>  
+            <li class="header-list__item">  <a href="./portfolio.html" class="header-list__link  ">Контакти</a></li>   
+        </ul> 
+    
+       
+    
     </div>
     <div class="mob-menu-bottom">
+        
+        <div>
+
     <ul class="mob-menu-contacts-list list">
-        <li class="mob-menu-contact-item mail">
+        <li class="mob-menu-contact-one">
             <a href="tel:+380961111111" class="mob-menu-contact-tel link">
-                +38 096
-                111 11 11</a>
+                +38 096111 11 11</a>
         </li>
         <li class="mob-menu-contact-item">
             <a href="mailto:info@devstudio.com" class="mob-menu-contact-mail link mail-to">
                 info@devstudio.com</a>
         </li>
     </ul>
-    <ul class="social-menu list">
+</div>
+    <ul class="social-menu-ul list">
         <li class="social-menu-item">
             <a href="" class="social-menu-link link">Instagramm</a>
         </li>
