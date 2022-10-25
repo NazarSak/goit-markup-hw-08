@@ -196,7 +196,7 @@ svg {
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav {
     display: none;
   }
@@ -228,7 +228,7 @@ svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 1px;
   }
 }
 
@@ -294,7 +294,7 @@ svg {
 }
 
 .mob-menu-contacts-list {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .mob-menu-contact-one {
@@ -455,19 +455,20 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-list {
   align-items: baseline;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-list {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-list__item:not(:first-child) {
     margin-top: 32px;
   }
@@ -505,7 +506,7 @@ button {
 .header-contacts-wrap {
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-contacts-wrap {
     margin-left: auto;
     display: none;
