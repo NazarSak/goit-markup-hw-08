@@ -8,6 +8,9 @@
 
 
     &-second{
+
+
+
       @media screen and (max-width: 762px){
         display: flex;
         margin-bottom: 50px;
@@ -16,6 +19,19 @@
         row-gap: 10px;
         width: 326px;
       }
+
+
+      @media screen and (max-width: 479px){
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 10px;
+        width: 100%;
+      }
+
+
+
      
 
       @media screen and (min-width: 762px){
